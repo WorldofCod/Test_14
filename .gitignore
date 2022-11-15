@@ -1,0 +1,7 @@
+app/__pycache__/
+msg_app/__pycache__/
+sample_test.py.txt
+*.csv
+!one.csv
+msg_app/app/*.csv
+views_sample.py
