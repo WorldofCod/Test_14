@@ -49,8 +49,23 @@ def contact(request):
     # return render(request, "contact.html", {}) 
     
     
+# ----------------------------------------***--------------
     
-    
+from django.http import HttpResponse
+
+# Create your models here.
+# -----------------------changes are made for understanding git functionality
+from django.contrib.auth import login, logout,authenticate
+def user_login(request):
+    if request.method == 'POST':
+        username= request.POST.get('username') 
+        password= request.POST.get('password')
+        print(username, password)
+        user = authenticate(username, password)
+        if user:
+            login(request, user)
+            return HttpResponse("successfully logged in")
+            
 
         
 
