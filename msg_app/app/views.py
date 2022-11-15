@@ -74,3 +74,12 @@ def product_videos(request):
     print("in product videos")
     
     
+# -----------------changes made by rashmi -----
+
+def f1(x,y):
+    return x+y
+
+
+c = f1(3,4)
+print(c)    
+#------------------------------------------ 
