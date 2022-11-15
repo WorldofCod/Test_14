@@ -69,4 +69,8 @@ def user_login(request):
 
         
 
+# -------------------changes by saytm--------
+def product_videos(request):
+    print("in product videos")
+    
     

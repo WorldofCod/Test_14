@@ -18,12 +18,15 @@ from django.urls import path
 from app.views import  register_request,homepage,contact
 from app.views import user_login
 
+from app.views import product_videos
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', register_request, name ='register_request'),
     path('home/', homepage,name="home"),
     path('contact/',contact,name='contact'),
 
+# ----------changes by satym
+    path('product_videos/',product_videos, name= "product_video"),
     
     # --------------for git understanding
     path('login/', user_login, name="login"),
